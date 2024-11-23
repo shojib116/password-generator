@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body class="light">
+    <section id="main-section">
+      <div id="container">
+        <button id="color-scheme-btn"></button>
+        <h1>Generate a<br><span>random password</span></h1>
+        <p>Never use an insecure pasword again</p>
+        <div id="customization-container">
+          <div id="pwd-length-container">
+            <label for="pwd-length-slider">Password length: </label>
+            <span id="pwd-length-display"></span>
+            <input type="range" min="8" max="32" id="pwd-length-slider">
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="number-checkbox" checked>
+            <span class="checkmark"></span>
+            <label for="number-checkbox">Include numbers</label>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="spl-char-checkbox" checked>
+            <span class="checkmark"></span>
+            <label for="spl-char-checkbox">Include Special Characters</label>
+          </div>
+        </div>
+        <button id="generate-btn" onclick="generatePasswords()">Generate passwords</button>
+        <div class="seperator"></div>
+        <div class="pwd-field-container">
+          <div class="pwd-field">
+            <span id="pwd-field-1"></span>
+            <span id="cpy-pwd-1"></span>
+          </div>
+          <div class="pwd-field">
+            <span id="pwd-field-2"></span>
+            <span id="cpy-pwd-2"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
