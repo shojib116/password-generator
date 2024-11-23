@@ -39,6 +39,7 @@ cpyPwd2.innerHTML = copySvg;
 
 let colorScheme = prefersDarkScheme.matches ? "dark" : "light";
 colorSchemeBtn.innerHTML = prefersDarkScheme.matches ? sunSvg : moonSvg;
+bodyEl.classList.remove(colorScheme === "dark" ? "light" : "dark")
 bodyEl.classList.add(colorScheme)
 
 function getCharSet() {
